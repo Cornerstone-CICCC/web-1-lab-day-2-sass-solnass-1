@@ -1,0 +1,49 @@
+main {
+    padding: 0.3rem;
+}
+
+h2{
+    background-color: cyan;
+    position: sticky;
+    top: 52px;
+}
+
+.gallery {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.fruit-hover{
+
+    figure{
+        max-width: 30%;
+        position:relative;
+
+        figcaption{
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        &:hover {
+
+         figcaption{
+            background-color: orange;
+            display:inline-block;
+         }
+    }
+    }
+     
+}
+
+.back-to-top-btn {
+    display: flex;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+
+}

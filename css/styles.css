@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  background-color: yellow;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+header nav {
+  display: flex;
+  list-style: none;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem;
+  align-items: center;
+}
+header nav ul li {
+  flex-direction: row;
+}
+
+main {
+  padding: 0.3rem;
+}
+
+h2 {
+  background-color: cyan;
+  position: sticky;
+  top: 52px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.fruit-hover figure {
+  max-width: 30%;
+  position: relative;
+}
+.fruit-hover figure figcaption {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.fruit-hover figure:hover figcaption {
+  background-color: orange;
+  display: inline-block;
+}
+
+.back-to-top-btn {
+  display: flex;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */
